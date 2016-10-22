@@ -1,0 +1,145 @@
+From steve.beattie@canonical.com Thu Aug 06 19:45:14 2015
+Received: from 208-151-246-43.dq1sn.easystreet.com ([208.151.246.43]
+ helo=lizaveta.nxnw.org)
+ by huckleberry.canonical.com with esmtp (Exim 4.76)
+ (envelope-from <steve.beattie@canonical.com>) id 1ZNR6I-0008C7-CG
+ for ubuntu-security-announce@lists.ubuntu.com; Thu, 06 Aug 2015 19:45:14 +0000
+Received: from kryten.nxnw.org (kryten.nxnw.org [10.19.96.254])
+ (using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+ (Client CN "kryten.int.wirex.com", Issuer "nxnw.org" (not verified))
+ by lizaveta.nxnw.org (Postfix) with ESMTPS id 89C6761E6A
+ for <ubuntu-security-announce@lists.ubuntu.com>;
+ Thu,  6 Aug 2015 12:45:11 -0700 (PDT)
+Received: by kryten.nxnw.org (Postfix, from userid 1000)
+ id 00E083401EE; Thu,  6 Aug 2015 12:45:10 -0700 (PDT)
+Date: Thu, 6 Aug 2015 12:45:10 -0700
+From: Steve Beattie <steve.beattie@canonical.com>
+To: ubuntu-security-announce@lists.ubuntu.com
+Subject: [USN-2706-1] OpenJDK 6 vulnerabilities
+Message-ID: <20150806194510.GD30355@nxnw.org>
+Mail-Followup-To: Ubuntu Security <security@ubuntu.com>
+MIME-Version: 1.0
+Content-Type: multipart/signed; micalg=pgp-sha512;
+ protocol="application/pgp-signature"; boundary="rz+pwK2yUstbofK6"
+Content-Disposition: inline
+User-Agent: Mutt/1.5.23 (2014-03-12)
+X-Mailman-Approved-At: Thu, 06 Aug 2015 19:47:10 +0000
+X-BeenThere: ubuntu-security-announce@lists.ubuntu.com
+X-Mailman-Version: 2.1.14
+Precedence: list
+Reply-To: ubuntu-users@lists.ubuntu.com, Ubuntu Security <security@ubuntu.com>
+List-Id: Ubuntu Security Announcements
+ <ubuntu-security-announce.lists.ubuntu.com>
+List-Unsubscribe: <https://lists.ubuntu.com/mailman/options/ubuntu-security-announce>, 
+ <mailto:ubuntu-security-announce-request@lists.ubuntu.com?subject=unsubscribe>
+List-Archive: <https://lists.ubuntu.com/archives/ubuntu-security-announce>
+List-Post: <mailto:ubuntu-security-announce@lists.ubuntu.com>
+List-Help: <mailto:ubuntu-security-announce-request@lists.ubuntu.com?subject=help>
+List-Subscribe: <https://lists.ubuntu.com/mailman/listinfo/ubuntu-security-announce>, 
+ <mailto:ubuntu-security-announce-request@lists.ubuntu.com?subject=subscribe>
+X-List-Received-Date: Thu, 06 Aug 2015 19:45:15 -0000
+
+
+--rz+pwK2yUstbofK6
+Content-Type: text/plain; charset=us-ascii
+Content-Disposition: inline
+
+==========================================================================
+Ubuntu Security Notice USN-2706-1
+August 06, 2015
+
+openjdk-6 vulnerabilities
+==========================================================================
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 12.04 LTS
+
+Summary:
+
+Several security issues were fixed in OpenJDK 6.
+
+Software Description:
+- openjdk-6: Open Source Java implementation
+
+Details:
+
+Several vulnerabilities were discovered in the OpenJDK JRE related to
+information disclosure, data integrity, and availability. An attacker
+could exploit these to cause a denial of service or expose sensitive
+data over the network. (CVE-2015-2590, CVE-2015-2628, CVE-2015-4731,
+CVE-2015-4732, CVE-2015-4733, CVE-2015-4760, CVE-2015-4748)
+
+Several vulnerabilities were discovered in the cryptographic components
+of the OpenJDK JRE. An attacker could exploit these to expose sensitive
+data over the network. (CVE-2015-2601, CVE-2015-2808, CVE-2015-4000,
+CVE-2015-2625, CVE-2015-2613)
+
+As a security improvement, this update modifies OpenJDK behavior to
+disable RC4 TLS/SSL cipher suites by default.
+
+As a security improvement, this update modifies OpenJDK behavior to
+reject DH key sizes below 768 bits by default, preventing a possible
+downgrade attack.
+
+Several vulnerabilities were discovered in the OpenJDK JRE related
+to information disclosure. An attacker could exploit these to expose
+sensitive data over the network. (CVE-2015-2621, CVE-2015-2632)
+
+A vulnerability was discovered with how the JNDI component of the
+OpenJDK JRE handles DNS resolutions. A remote attacker could exploit
+this to cause a denial of service. (CVE-2015-4749)
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 12.04 LTS:
+  icedtea-6-jre-cacao             6b36-1.13.8-0ubuntu1~12.04
+  icedtea-6-jre-jamvm             6b36-1.13.8-0ubuntu1~12.04
+  openjdk-6-jdk                   6b36-1.13.8-0ubuntu1~12.04
+  openjdk-6-jre                   6b36-1.13.8-0ubuntu1~12.04
+  openjdk-6-jre-headless          6b36-1.13.8-0ubuntu1~12.04
+  openjdk-6-jre-lib               6b36-1.13.8-0ubuntu1~12.04
+  openjdk-6-jre-zero              6b36-1.13.8-0ubuntu1~12.04
+  openjdk-6-source                6b36-1.13.8-0ubuntu1~12.04
+
+This update uses a new upstream release, which includes additional
+bug fixes. After a standard system update you need to restart any
+Java applications or applets to make all the necessary changes.
+
+References:
+  http://www.ubuntu.com/usn/usn-2706-1
+  CVE-2015-2590, CVE-2015-2601, CVE-2015-2621, CVE-2015-2625,
+  CVE-2015-2628, CVE-2015-2632, CVE-2015-2808, CVE-2015-4000,
+  CVE-2015-4731, CVE-2015-4732, CVE-2015-4733, CVE-2015-4748,
+  CVE-2015-4749, CVE-2015-4760
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/openjdk-6/6b36-1.13.8-0ubuntu1~12.04
+
+
+--rz+pwK2yUstbofK6
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: Digital signature
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQIcBAEBCgAGBQJVw7lGAAoJEC8Jno0AXoH0fcoP/29yBQrX/qqM6vcXR5NL8pvP
+vYwDHunusM8rzkMZjIcflFLiQsEUyjZprAx1WLpP5CnASMN8rYV6OVQdgQTcf71E
+QmwC5aE1sMC3u2eoAAbhNlr28+dGpqrXAPL52eC7pumkQItK6F1YtQKIK3IEmsej
+IOCPjXd4OuyA7Bvui6IRZsC41YbCSl3wnDZmKnsmmUqKQe88OSh6FL50TlMQ3lkR
+cv7pjvwZ36Bg7wg0gjOjQQNrtU9QPyiQ4FBS4DH5u9UQlZcb9GClu9wuNfY2mxXI
+Y+oQp6jgCT+o8Ral0akHDsDipqozC2DW4+sianc1+axaWwh8H7k+mHT/TrdYEk4a
+moikFfMoC1tPLDD781pKrdNF1VZA0AztI4n2MkPX8DbNFXsUuFQOxofjG3PJ4+V/
+0p01uuvdpLvfB6puqC65Xfakcp2FslDBYWr1r1Ys34JaxJDHlLlUcg81wYj705vl
+4/49T0quvwJNJIBYfC3YdEZO/058hzhNAJfQDDuuD6192lUgfyMrzXTXq6cPTDZC
+mfL3MKRMd3HYvRqsw3BA2BVWXH5dj0qnV7MYod7yD6PXap+LHXdpPQSTl7VmEi4N
+Mbm/7/qo8YcCZpXxWXKQkSvjP17QGTUaON+QWAWiiTubOHKbchpZTwGFtSGT2z2e
+JN2S6qnJ56zsleBH2yAu
+=rpyW
+-----END PGP SIGNATURE-----
+
+--rz+pwK2yUstbofK6--

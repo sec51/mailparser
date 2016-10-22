@@ -1,0 +1,71 @@
+From kate.stewart@canonical.com Tue Apr 19 21:23:26 2011
+Received: from adelie.canonical.com ([91.189.90.139])
+	by chlorine.canonical.com with esmtp (Exim 4.71)
+	(envelope-from <kate.stewart@canonical.com>)
+	id 1QCIOM-0003Zu-Bi; Tue, 19 Apr 2011 21:23:26 +0000
+Received: from youngberry.canonical.com ([91.189.89.112])
+	by adelie.canonical.com with esmtp (Exim 4.71 #1 (Debian))
+	id 1QCIOM-0005Ft-1b; Tue, 19 Apr 2011 21:23:26 +0000
+Received: from 99-191-111-134.lightspeed.austtx.sbcglobal.net
+	([99.191.111.134] helo=[192.168.1.72])
+	by youngberry.canonical.com with esmtpsa
+	(SSL3.0:DHE_RSA_AES_256_CBC_SHA1:32) (Exim 4.71)
+	(envelope-from <kate.stewart@canonical.com>)
+	id 1QCIOL-0007W8-NH; Tue, 19 Apr 2011 21:23:26 +0000
+Subject: Ubuntu 6.06 (Dapper Drake) reaches end-of-life on June 1 2011
+From: Kate Stewart <kate.stewart@canonical.com>
+To: ubuntu-announce@lists.ubuntu.com, ubuntu-security-announce@lists.ubuntu.com
+X-Ubuntu: Announce
+Content-Type: text/plain; charset="UTF-8"
+Organization: Canonical
+Date: Tue, 19 Apr 2011 16:23:20 -0500
+Message-ID: <1303248200.3009.10193.camel@veni>
+Mime-Version: 1.0
+X-Mailer: Evolution 2.28.3 
+Content-Transfer-Encoding: 7bit
+X-Mailman-Approved-At: Tue, 19 Apr 2011 21:28:11 +0000
+Cc: ubuntu-release@lists.ubuntu.com
+X-BeenThere: ubuntu-security-announce@lists.ubuntu.com
+X-Mailman-Version: 2.1.13
+Precedence: list
+Reply-To: ubuntu-users@lists.ubuntu.com, kate.stewart@canonical.com
+List-Id: Ubuntu Security Announcements
+	<ubuntu-security-announce.lists.ubuntu.com>
+List-Unsubscribe: <https://lists.ubuntu.com/mailman/options/ubuntu-security-announce>,
+	<mailto:ubuntu-security-announce-request@lists.ubuntu.com?subject=unsubscribe>
+List-Archive: <https://lists.ubuntu.com/archives/ubuntu-security-announce>
+List-Post: <mailto:ubuntu-security-announce@lists.ubuntu.com>
+List-Help: <mailto:ubuntu-security-announce-request@lists.ubuntu.com?subject=help>
+List-Subscribe: <https://lists.ubuntu.com/mailman/listinfo/ubuntu-security-announce>,
+	<mailto:ubuntu-security-announce-request@lists.ubuntu.com?subject=subscribe>
+X-List-Received-Date: Tue, 19 Apr 2011 21:23:26 -0000
+
+Ubuntu announced its 6.06 Server release almost 5 years ago, on June 1,
+2006.  For the LTS Server releases, Ubuntu committed to ongoing
+security and critical fixes for a period of 5 years. The support
+period is now nearing its end and Ubuntu 6.06 LTS Server will reach 
+end of life on Wednesday, June 1, 2011. At that time, Ubuntu Security
+Notices will no longer include information or updated packages for
+Ubuntu 6.06.
+
+The supported upgrade path from Ubuntu 6.06 LTS Server is via 
+Ubuntu 8.04 LTS Server.  Instructions and caveats for the upgrade may 
+be found at  https://help.ubuntu.com/community/HardyUpgrades. 
+For further Ubuntu support, including commercial support options, see
+http://www.ubuntu.com/support.
+ 
+Ubuntu 8.04 LTS Server continues to be actively supported with 
+security updates and select high-impact bug fixes. All announcements 
+of official security updates for Ubuntu releases are sent to 
+the ubuntu-security-announce mailing list, information about which 
+may be found at
+https://lists.ubuntu.com/mailman/listinfo/ubuntu-security-announce.
+
+Since its launch in October 2004 Ubuntu has become one of the most
+highly regarded Linux distributions with millions of users in homes,
+schools, businesses and governments around the world. Ubuntu is Open
+Source software, costs nothing to download, and users are free to
+customise or alter their software in order to meet their needs.
+
+Kate Stewart
+Ubuntu Release Manager

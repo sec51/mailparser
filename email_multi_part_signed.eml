@@ -1,0 +1,135 @@
+From marc.deslauriers@canonical.com Wed May 02 12:21:46 2012
+Received: from youngberry.canonical.com ([91.189.89.112])
+	by chlorine.canonical.com with esmtp (Exim 4.71)
+	(envelope-from <marc.deslauriers@canonical.com>) id 1SPYZ0-0000Kj-HX
+	for ubuntu-security-announce@lists.ubuntu.com;
+	Wed, 02 May 2012 12:21:46 +0000
+Received: from modemcable236.11-81-70.mc.videotron.ca ([70.81.11.236]
+	helo=[192.168.66.150]) by youngberry.canonical.com with esmtpsa
+	(TLS1.0:RSA_AES_256_CBC_SHA1:32) (Exim 4.71)
+	(envelope-from <marc.deslauriers@canonical.com>) id 1SPYZ0-0006cC-Ad
+	for ubuntu-security-announce@lists.ubuntu.com;
+	Wed, 02 May 2012 12:21:46 +0000
+Message-ID: <1335961298.2997.207.camel@mdlinux>
+Subject: [USN-1436-1] Libtasn1 vulnerability
+From: Marc Deslauriers <marc.deslauriers@canonical.com>
+To: ubuntu-security-announce@lists.ubuntu.com
+Date: Wed, 02 May 2012 08:21:38 -0400
+Content-Type: multipart/signed; micalg="pgp-sha512";
+	protocol="application/pgp-signature"; boundary="=-sEYFXpSE1FEw092gj+2Q"
+X-Mailer: Evolution 3.2.3-0ubuntu6 
+Mime-Version: 1.0
+X-Mailman-Approved-At: Wed, 02 May 2012 12:21:56 +0000
+X-BeenThere: ubuntu-security-announce@lists.ubuntu.com
+X-Mailman-Version: 2.1.13
+Precedence: list
+Reply-To: ubuntu-users@lists.ubuntu.com, Ubuntu Security <security@ubuntu.com>
+List-Id: Ubuntu Security Announcements
+	<ubuntu-security-announce.lists.ubuntu.com>
+List-Unsubscribe: <https://lists.ubuntu.com/mailman/options/ubuntu-security-announce>,
+	<mailto:ubuntu-security-announce-request@lists.ubuntu.com?subject=unsubscribe>
+List-Archive: <https://lists.ubuntu.com/archives/ubuntu-security-announce>
+List-Post: <mailto:ubuntu-security-announce@lists.ubuntu.com>
+List-Help: <mailto:ubuntu-security-announce-request@lists.ubuntu.com?subject=help>
+List-Subscribe: <https://lists.ubuntu.com/mailman/listinfo/ubuntu-security-announce>,
+	<mailto:ubuntu-security-announce-request@lists.ubuntu.com?subject=subscribe>
+X-List-Received-Date: Wed, 02 May 2012 12:21:46 -0000
+
+
+--=-sEYFXpSE1FEw092gj+2Q
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+Ubuntu Security Notice USN-1436-1
+May 02, 2012
+
+libtasn1-3 vulnerability
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=
+=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D=3D
+
+A security issue affects these releases of Ubuntu and its derivatives:
+
+- Ubuntu 12.04 LTS
+- Ubuntu 11.10
+- Ubuntu 11.04
+- Ubuntu 10.04 LTS
+- Ubuntu 8.04 LTS
+
+Summary:
+
+Libtasn1 could be made to crash or run programs as your login if it
+received specially crafted input.
+
+Software Description:
+- libtasn1-3: Library to manage ASN.1 structures
+
+Details:
+
+Matthew Hall discovered that Libtasn1 incorrectly handled certain large
+values. An attacker could exploit this with a specially crafted ASN.1
+structure and cause a denial of service, or possibly execute arbitrary
+code.
+
+Update instructions:
+
+The problem can be corrected by updating your system to the following
+package versions:
+
+Ubuntu 12.04 LTS:
+  libtasn1-3                      2.10-1ubuntu1.1
+
+Ubuntu 11.10:
+  libtasn1-3                      2.9-4ubuntu0.1
+
+Ubuntu 11.04:
+  libtasn1-3                      2.7-1ubuntu1.1
+
+Ubuntu 10.04 LTS:
+  libtasn1-3                      2.4-1ubuntu0.1
+
+Ubuntu 8.04 LTS:
+  libtasn1-3                      1.1-1ubuntu0.1
+
+In general, a standard system update will make all the necessary changes.
+
+References:
+  http://www.ubuntu.com/usn/usn-1436-1
+  CVE-2012-1569
+
+Package Information:
+  https://launchpad.net/ubuntu/+source/libtasn1-3/2.10-1ubuntu1.1
+  https://launchpad.net/ubuntu/+source/libtasn1-3/2.9-4ubuntu0.1
+  https://launchpad.net/ubuntu/+source/libtasn1-3/2.7-1ubuntu1.1
+  https://launchpad.net/ubuntu/+source/libtasn1-3/2.4-1ubuntu0.1
+  https://launchpad.net/ubuntu/+source/libtasn1-3/1.1-1ubuntu0.1
+
+
+
+--=-sEYFXpSE1FEw092gj+2Q
+Content-Type: application/pgp-signature; name="signature.asc"
+Content-Description: This is a digitally signed message part
+Content-Transfer-Encoding: 7bit
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+
+iQIcBAABCgAGBQJPoSbTAAoJEGVp2FWnRL6T6xEQAImRJZvSWyK1RJoPDZoEUdhZ
+6yse8WA0BJKTj2SxpZj83SJDLu6huILhz4ij0rzyU71qDsCmuXTy8Ou3qLjyeI3D
+CQftw7ayUSmO8RhpBOFQTwE8b50HnL8lJ/sh+UbLeSsdhYEycXS8zU0Z85wvj8JB
+i1+glyz4aCDWtOdVTbodQpSxbJQDVuqJn2p950yOIorB7sMSLyLcbYg1Y+qiK4U6
+5nQnJGqHOeA+sknmba8Mq3EZ/4Y+OGjjbWwT2Yy0QwnnVBoikZqNQvy6IJqSmLLY
+01lycBA/NnIuNpjySSEay/lODaHTR6i+PUPQd5viIlGWJlECPa/7+U26i29zPE5C
+EFWbGT0Xw8VGEeohpH/d0gqVV2Ad4gK8/w2ifeGqfPIYImypCvcmTFlEaKvIG8Wj
+6SC+asYxFguYRvMtf5By/DzwZEtGBUVu2k2Tvcg/6KOw04c7plyAuIJnuc1Q99sd
+y/90iCZ3RJeHeYhxCGdNMMyCoXT0U0326omhVwzZ/v8sxFJiMadRoDOBhb2sZHuA
+Wwd0zcqLMns+lETKVmAHUHHiCwdYpy44ek9/G2R+vrgf+yg8QdHBM1KTIaDARTMK
+WrzaVYzc7AEiFXpM1yiQqhy7Z/GOejyVIH/7MK4Zj0gQj16XOdMekUrAAT0CtB08
+/QpNusnSMxeqHT95wxqc
+=yBpq
+-----END PGP SIGNATURE-----
+
+--=-sEYFXpSE1FEw092gj+2Q--
